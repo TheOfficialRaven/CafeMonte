@@ -6,11 +6,11 @@ function myNav() {
         if(nav.style.left == "0%"){
             nav.style.left = "-100%";
             bar.src = "Bars.png"
-            homeContent.style.left = "20%";
+            homeContent.style.left = "10%";
         }else{
             nav.style.left = "0%"
             bar.src = "X.png"
-            homeContent.style.left = "400px";
+            homeContent.style.left = "50%";
         }
     }
     
