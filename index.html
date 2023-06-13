@@ -17,6 +17,15 @@
         <script src="https://kit.fontawesome.com/63c4dcd0e6.js" crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="style.css">
+        
+        <!-- email js script -->
+        
+         <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">(function () {
+        emailjs.init("J01QMSmqj93QY8gmJ");
+      })();
+    </script>
          
     </head>
     
@@ -86,10 +95,10 @@
                 </p>
                 <div class="home-links">
                     <div class="first">
-                        <a href="#">Finom kávék</a>
+                        <a href="#coffee-menu">Finom kávék</a>
                     </div>
                     <div class="second">
-                        <a href="#">tudj meg többet</a>
+                        <a href="#rólunk">nyitvatartási idő</a>
                     </div>
                 </div>
             </div>
@@ -510,7 +519,7 @@
                         <button type="submit">Feliratkozás</button>
                     </form>
                     <div class="check">
-                        <input type="checkbox" name="" id="inpt">
+                        <input type="checkbox" name="" id="inpt" required>
                         <label for="inpt">Elolvastam a feltételeket.</label>
                     </div>
                     <div class="menu-link">
