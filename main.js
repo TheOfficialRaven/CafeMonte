@@ -29,6 +29,16 @@ function myNav() {
             closeNav();
         });
     });
+    window.addEventListener("scroll", () => {
+        let barsImg = document.querySelector(".bar");
+        if (window.pageYOffset > 0) {
+            barsImg.style.display = "none";
+        } else {
+            barsImg.style.display = "block";
+        }
+    });
+    
+    
 }
 
 myNav();
