@@ -865,7 +865,7 @@ header nav a:hover{
     color: #c7a17a;
 }
 
-.footer1 form a{
+.footer1 form button{
     text-decoration: none;
     text-transform: capitalize;
     font-size: 13px;
@@ -876,7 +876,7 @@ header nav a:hover{
     border: 1px solid #c7a17a;
 }
 
-.footer1 form a:hover{
+.footer1 form button:hover{
     background: transparent;
     color: #c7a17a;
 }

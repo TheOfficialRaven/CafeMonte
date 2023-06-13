@@ -504,9 +504,13 @@
                 </div>
                 <div class="footer1">
                     <h3>feliratkozás</h3>
-                    <form action="">
-                        <input type="email" name="" id="" placeholder="Email címed">
-                        <a href="#">feliratkozás</a>
+                    <form method="POST" action="https://formsubmit.co/el/veyiyo" enctype="multipart/form-data">
+                        <input type="email" name="" id="" placeholder="Email cím" required>
+                        <input type="text" name="" placeholder="Név" required>
+                        <input type="hidden" name="_autoresponse" value="your custom message">
+                        <input type="hidden" name="_subject" value="Új felirítkozó">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit">Feliratkozás</button>
                     </form>
                     <div class="check">
                         <input type="checkbox" name="" id="inpt">
