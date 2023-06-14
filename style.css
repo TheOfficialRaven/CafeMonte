@@ -76,7 +76,7 @@ body {
     color: #c7a17a;
 }
 
-.info-right .info-link a{
+.info-right .info-link button{
     display: inline-block;
     color: #fff;
     text-transform: capitalize;
@@ -87,11 +87,87 @@ body {
     border-radius: 5px;
 }
 
-.info-link a:hover{
+.info-link button:hover{
     border-color: #333;
     background: transparent;
     text-decoration: none;
 }
+
+        .modal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            width: 100%;
+            margin: auto;
+        }
+        
+        .modal-content {
+            background-color: #000;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #c7a17a;
+            width: 90%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            padding: 52px 24px 5px 24px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .close {
+            color: #fff;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: auto;
+            margin-top: auto;
+            
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #c7a17a;
+            text-decoration: none;
+            cursor: pointer;
+        }
+.modal-content label{
+    font-weight: 900;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.modal-content button{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    background: #c7a17a;
+    border-radius: 5px;
+    padding: 11px 20px;
+    display: inline-block;
+    border: 1px solid #c7a17a;
+    transition: .4s ease-in-out;
+}
+
+.modal-content h2{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.modal-content h3{
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
 
 header{
     position: sticky;
