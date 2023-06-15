@@ -252,6 +252,10 @@ header nav a:hover{
         font-size: 3rem;
     }
     
+    .navigation.scrolled {
+    display: none;
+  }
+    
 }
 
 @media(max-width: 576px){
@@ -454,7 +458,7 @@ header nav a:hover{
 
 .bg-shop .shop-flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: normal;
     align-items: center;
     flex-wrap: wrap;
     grid-row-gap: 20px;
@@ -672,6 +676,7 @@ header nav a:hover{
     padding: 10px 18px;
     transition: .4s ease-in-out;
     border: 1px solid #c7a17a;
+    cursor: pointer;
     
 }
 
