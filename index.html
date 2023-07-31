@@ -65,12 +65,12 @@
         
         <!------- Contact Us ------>
 
-        <div id="modalDialog" class="modal">
+        <div id="modalDialog" class="myModal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Írj Nekünk</h2>
-            <h3>Értékeld a kiszolgálást és a termékeket,<br> vagy írj ha segítséged van valamiben,<br> amint tudunk válaszolunk!</h3>
             <form method="post" id="contactForm">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Írj Nekünk</h2>
+                <h3>Értékeld a kiszolgálást és a termékeket,<br> vagy írj ha segítséged van valamiben,<br> amint tudunk válaszolunk!</h3>
                 <label for="name">Név:</label>
                 <input type="text" name="name" id="name" required>
                 
@@ -84,36 +84,6 @@
             </form>
         </div>
     </div>
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById("modalDialog");
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("contactBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the button is clicked, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        };
-
-        // When the <span> (close button) is clicked, close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        };
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        };
-        
-        modal.style.display = "none";
-    </script>
     
         
         <!-- Header kezdete -->
@@ -144,7 +114,7 @@
         <!-- Home Kezdete -->
         
         <div class="home-section">
-            <div class="home-content">
+            <div class="home-content initial-position">
                 <h1>Élvezzük a finom <br> Kávékat együtt!</h1>
                 <p>
                     Elérhető árak, adj egy esélyt <br> és értékeld.
@@ -265,7 +235,7 @@
                         </div>
                     </div>
                     <h2>Forró Kávé</h2>
-                    <div class="stars">
+                    <div class="stars" data-rating="0">
                         <i class="fas fa-star gold"></i>
                         <i class="fas fa-star gold"></i>
                         <i class="fas fa-star gold"></i>
