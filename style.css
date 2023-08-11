@@ -179,7 +179,10 @@ header nav a:hover{
 }
 
 #contactForm {
-   background-color: #000;
+   background-image: url(Footer-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   display: flex;
     flex-direction: column;
     width: 90%;
@@ -422,6 +425,7 @@ header nav a:hover{
     transform: scale(1.1);
 }
 
+
 /***************************** Section Two Mobile ***********************************/
 
 @media(max-width: 991px){
@@ -436,159 +440,6 @@ header nav a:hover{
     }
 }
 
-/************************** Section Three ************************/
-
-
-.bg-shop{
-    width: 90%;
-    margin: 100px auto;
-}
-
-.bg-shop .shop-links{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    align-items: center;
-    color: #fff;
-}
-
-.shop-links h2{
-    text-transform: capitalize;
-    font-family: 'Pushster', display;
-}
-
-.shop-links .links{
-    display: flex;
-    align-items: center;
-}
-
-.shop-links .links li{
-    margin-left: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: .4s ease-in-out;
-}
-
-.shop-links .links li:hover{
-    color: #c7a17a;
-}
-
-.bg-shop .shop-flex{
-    display: flex;
-    justify-content: normal;
-    align-items: center;
-    flex-wrap: wrap;
-    grid-row-gap: 20px;
-}
-
-.shop-flex .shop1{
-    width: 24%;
-    color: #fff;
-}
-
-.shop1 .shop-image{
-    position: relative;
-    overflow: hidden;
-    background: #212529;
-    padding: 50px 20px;
-    margin-bottom: 20px;
-}
-
-.shop-image img{
-    width: 100%;
-}
-
-.shop-image .price{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    border: 1px solid #c7a17a;
-    padding: 6px 15px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.shop-image .social{
-    position: absolute;
-    bottom: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.shop-image .social a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 10px;
-    border: 1px solid #fff;
-    padding: 5px 7px;
-    transition: .4s ease-in-out;
-}
-
-.shop-image .social a:hover{
-    border-color: #c7a17a;
-    color: #c7a17a;
-}
-
-.shop-image:hover .social{
-    animation: animate1 .6s ease-in-out forwards;
-}
-
-.shop-image .social{
-    animation: animate2 .6s ease-in-out;
-}
-
-@keyframes animate1 {
-    0%{
-        opacity: 0;
-        bottom: -100px;
-    }
-    100%{
-        opacity: 1;
-        bottom: 30px;
-    }
-}
-
-@keyframes animate2 {
-    0%{
-        opacity: 1;
-        bottom: 30px;
-    }
-    100%{
-        opacity: 0;
-        bottom: -100%;
-    }
-}
-
-.shop1 h2{
-    text-transform: capitalize;
-    font-size: 1.2rem;
-}
-
-.shop1 .gold{
-    color: gold;
-}
-
-.shop1 .stars{
-    margin-bottom: 10px;
-}
-
-.shop1 .stars i{
-    margin: 0px -2px;
-    font-size: 12px;
-}
-
-.shop1 article{
-    font-size: 16px;
-    font-weight: bold;
-    margin-right: 5px;
-    display: inline-block;
-}
-
-.shop1 span{
-    color: #555;
-    text-decoration: line-through;
-}
 
 
 /************************ Section Three Mobile ***********************/
@@ -609,7 +460,7 @@ header nav a:hover{
     }
 }
 
-/****************************** Section Four **********************/
+/****************************** Menü Section Four **********************/
 
 .bg-menu{
     background-image: url(menu-background.jpg);
@@ -715,7 +566,7 @@ header nav a:hover{
 }
 
 
-/******************************* Section Five *******************************/
+/******************************* Galéria Section Five *******************************/
 
 
 .bg-gallery {
@@ -803,7 +654,7 @@ header nav a:hover{
 }
 
 
-/******************************** Section Six **************************/
+/******************************** Rólunk Section Six **************************/
 
 .bg-about{
     margin: 100px 0px;
