@@ -82,6 +82,8 @@ var btn = document.getElementById("contactBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var header = document.getElementsByClassName("header");
+
 // When the button is clicked, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
