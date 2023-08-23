@@ -442,8 +442,46 @@ header nav a:hover{
     }
 }
 
+/************************* Section Two Pup up Menu ************************/
+.bg-service .popup-image-one, .popup-image-two, .popup-image-three{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,.9);
+    width: 100%;
+    height: 100%;
+    z-index: 120;
+    display: none;
+}
 
+.bg-service .popup-image-one span, .popup-image-two span, .popup-image-three span{
+    position: absolute;
+    top: 30px;
+    right: 250px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #ffff;
+    cursor: pointer;
+    z-index: 120;
+}
 
+.bg-service .popup-image-one img, .popup-image-two img, .popup-image-three img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #c7a17a;
+    border-radius: 5px;
+    height: 700px;
+    object-fit: cover;
+}
+
+/*********************** S 2 Pop up Menu Mobile ***********************/
+@media(max-width:768px){
+    .bg-service .popup-image-one img{
+        width: 95%;
+    }  
+}
 /************************ Section Three Mobile ***********************/
 
 @media(max-width: 991px){

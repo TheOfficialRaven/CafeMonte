@@ -62,6 +62,36 @@ window.onload = () => {
   }, 500); // 500 milliseconds (0.5 seconds) delay
 };
 
+////////////////////////////////// Menu Popup //////////////////////////////////////////////////////
+document.querySelectorAll('#first-service img').forEach(image =>{
+    image.onclick = () => {
+        document.querySelector('.popup-image-one').style.display = 'block';
+    }
+});
+document.querySelector('.popup-image-one span').onclick = () =>{
+    document.querySelector('.popup-image-one').style.display = 'none';
+}
+
+
+document.querySelectorAll('#second-service img').forEach(image =>{
+    image.onclick = () => {
+        document.querySelector('.popup-image-two').style.display = 'block';
+    }
+});
+document.querySelector('.popup-image-two span').onclick = () =>{
+    document.querySelector('.popup-image-two').style.display = 'none';
+}
+
+
+document.querySelectorAll('#third-service img').forEach(image =>{
+    image.onclick = () => {
+        document.querySelector('.popup-image-three').style.display = 'block';
+    }
+});
+document.querySelector('.popup-image-three span').onclick = () =>{
+    document.querySelector('.popup-image-three').style.display = 'none';
+}
+
 
 ////////////////////////////////// Logo Home Button////////////////////////////////////////////////
  // Get the image element by its ID
