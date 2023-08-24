@@ -28,6 +28,7 @@ body {
 }
 
 
+
 /***************************** Header *************************/
 
 .info {
@@ -149,7 +150,7 @@ header nav a:hover{
 
 .bars img{
     width: 40px;
-    height: 20px;
+    height: 40px;
 }
 
 .logo img{
@@ -379,13 +380,14 @@ header nav a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
     flex-wrap: wrap;
+    scroll-margin-top: 110px;
 }
 
 
 .bg-service .service-one{
-    width: 32%;
+    width: 33%;
     position: relative;
     overflow: hidden;
 }
@@ -442,46 +444,7 @@ header nav a:hover{
     }
 }
 
-/************************* Section Two Pup up Menu ************************/
-.bg-service .popup-image-one, .popup-image-two, .popup-image-three{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background: rgba(0,0,0,.9);
-    width: 100%;
-    height: 100%;
-    z-index: 120;
-    display: none;
-}
 
-.bg-service .popup-image-one span, .popup-image-two span, .popup-image-three span{
-    position: absolute;
-    top: 30px;
-    right: 250px;
-    font-size: 60px;
-    font-weight: bolder;
-    color: #ffff;
-    cursor: pointer;
-    z-index: 120;
-}
-
-.bg-service .popup-image-one img, .popup-image-two img, .popup-image-three img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid #c7a17a;
-    border-radius: 5px;
-    height: 700px;
-    object-fit: cover;
-}
-
-/*********************** S 2 Pop up Menu Mobile ***********************/
-@media(max-width:768px){
-    .bg-service .popup-image-one img{
-        width: 95%;
-    }  
-}
 /************************ Section Three Mobile ***********************/
 
 @media(max-width: 991px){
@@ -509,6 +472,7 @@ header nav a:hover{
     background-size: cover;
     width: 100%;
     padding: 50px 0px;
+    scroll-margin-top: 100px;
 }
 
 .menu-title{
@@ -611,6 +575,7 @@ header nav a:hover{
 
 .bg-gallery {
     margin: 100px 0;
+    scroll-margin-top: 120px;
 }
 
 .bg-gallery .gallery-flex{
@@ -701,6 +666,7 @@ header nav a:hover{
 .bg-about{
     margin: 100px 0px;
     width: 100%;
+    scroll-margin-top: 150px;
 }
 
 .bg-about .about-flex{
@@ -710,35 +676,36 @@ header nav a:hover{
 .about-flex .about1{
     width: 50%;
     position: relative;
+    border: 8px solid #c7a17a;
+}
+
+.about-flex .about2{
+    width: 49%;
+    position: relative;
+    text-align: center;
 }
 
 .about-flex .about1 img{
-    width: 100%;
+    width: 95%;
+    margin: 20px;
 }
 
-.about1 .image-logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 20%;
-}
-
-.about1-txt{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #fff;
+.bg-about h3{
+    color: #ffff;
+    font-size: 30px;
     text-align: center;
-    width: 100%;
-    background: rgba(0,0,0,.4);
+    text-transform: capitalize;
+    border-bottom: 2px solid #c7a17a;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-.about1-txt h3{
-    font-weight: 700;
-    text-transform: uppercase;
+.bg-about p{
+    font-size: 20px;
+    color: #ffff;
 }
+
+
 
 /***************************** Section Six Mobile **********************/
 
@@ -747,8 +714,13 @@ header nav a:hover{
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
     }
      .about-flex .about1{
+        width: 98%;
+    }
+    
+    .bg-about .about2{
         width: 100%;
     }
 }
@@ -776,7 +748,7 @@ header nav a:hover{
     flex-wrap: wrap;
 }
 
-.footer-flex .footer1{
+.footer-flex .footer1, .footer-flex .footer2{
     width: 32%;
     color: #fff;
 }
@@ -787,7 +759,7 @@ header nav a:hover{
 }
 
 .footer1 section{
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 
@@ -800,7 +772,17 @@ header nav a:hover{
     transition: .4 ease-in-out;
 }
 
-.footer-links a:hover{
+.footer2 .footer-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    transition: .4 ease-in-out;
+    width: 15%;
+    cursor: default;
+}
+
+.footer2 .footer-links a:hover{
     color: #c7a17a;
 }
 
@@ -810,6 +792,14 @@ header nav a:hover{
     margin-bottom: 50px;
     display: inline-block;
 }
+
+.footer2 h3{
+    text-transform: capitalize;
+    border-bottom: 2px solid #c7a17a;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
 
 .footer1 .location{
     margin-left: 30px;
@@ -834,45 +824,19 @@ header nav a:hover{
     margin-bottom: 5px;
 }
 
-.footer1 form{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 52px;
-    line-height: 52px;
-    background: #fff;
-    border-radius: 30px;
-    overflow: hidden;
+.footer1 .Days{
+    margin-bottom: 5px;
 }
 
-.footer1 form input{
-    border: none;
-    outline: none;
-    padding-left: 10px;
-    font-size: 13px;
-    color: #c7a17a;
+
+
+.footer2 .footer-links p{
+    font-size: 10px;
+    display: inline-block;
+    position: relative;
+    width: 15%;
 }
 
-.footer1 form button{
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 13px;
-    color: #fff;
-    background: #c7a17a;
-    width: 25%;
-    text-align: center;
-    border: 1px solid #c7a17a;
-}
-
-.footer1 form button:hover{
-    background: transparent;
-    color: #c7a17a;
-}
-
-.check{
-    margin-top: 20px;
-}
 
 
 /**************************************** Footer Mobile ***************************/
@@ -880,6 +844,10 @@ header nav a:hover{
 @media(max-width: 991px){
     .footer-flex .footer1{
         width: 49%;
+    }
+    
+    .footer-flex .footer2{
+        width: 98%;
     }
 }
 
