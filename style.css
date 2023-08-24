@@ -847,12 +847,16 @@ header nav a:hover{
     }
     
     .footer-flex .footer2{
-        width: 98%;
+        width: 100%;
     }
 }
 
 @media(max-width: 576px){
     .footer-flex .footer1{
+        width: 100%;
+    }
+    
+    .footer-flex .footer2{
         width: 100%;
     }
 }
