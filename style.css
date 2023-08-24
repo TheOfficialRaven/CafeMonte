@@ -841,9 +841,27 @@ header nav a:hover{
 
 /**************************************** Footer Mobile ***************************/
 
+@media(max-width: 1200px){
+    .footer2 .footer-links a{
+        width: 20%;
+    }
+    
+    .footer2 .footer-links p{
+        width: 20%;
+    }
+}
+
 @media(max-width: 991px){
     .footer-flex .footer1{
         width: 49%;
+    }
+    
+    .footer2 .footer-links a{
+        width: 18%;
+    }
+    
+    .footer2 .footer-links p{
+        width: 18%;
     }
     
     .footer-flex .footer2{
@@ -858,5 +876,13 @@ header nav a:hover{
     
     .footer-flex .footer2{
         width: 100%;
+    }
+    
+    .footer2 .footer-links a{
+        width: 20%;
+    }
+    
+    .footer2 .footer-links p{
+        width: 20%;
     }
 }
