@@ -720,6 +720,10 @@ header nav a:hover{
         width: 98%;
     }
     
+    .about-flex .about1 img{
+        width:  92%;
+    }
+    
     .bg-about .about2{
         width: 100%;
     }
