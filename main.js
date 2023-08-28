@@ -59,7 +59,7 @@ window.onload = () => {
     const homeContent = document.querySelector(".home-content");
     homeContent.classList.remove("initial-position"); // Remove the 'initial-position' class
     homeContent.style.left = "50px"; // Move it to the final position
-  }, 500); // 500 milliseconds (0.5 seconds) delay
+  }, 300); // 500 milliseconds (0.5 seconds) delay
 };
 
 ////////////////////////////////// Menu Popup //////////////////////////////////////////////////////

@@ -415,6 +415,7 @@ header nav a:hover{
     color: #fff;
 }
 
+/**
 .service-one .over-txt p{
     margin: 0;
     color: #c7a17a;
@@ -424,6 +425,7 @@ header nav a:hover{
 .service-one .over-txt h4{
     text-transform: capitalize;
 }
+**/
 
 .service-one:hover img{
     transform: scale(1.1);
@@ -538,6 +540,7 @@ header nav a:hover{
 .menu-link{
     text-align: center;
     margin: 30px 0;
+    scroll-margin-top: 250px;
 }
 
 .menu-link a{
@@ -726,6 +729,7 @@ header nav a:hover{
     
     .bg-about .about2{
         width: 100%;
+        margin-top: 50px;
     }
 }
 
@@ -737,7 +741,7 @@ header nav a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: auto;
+    height: 500px;
     padding: 100px 0px;
     overflow: hidden;
 }
@@ -819,7 +823,6 @@ header nav a:hover{
 .location a{
     text-decoration: none;
     color: #fff;
-    text-transform: capitalize;
     margin-bottom: 5px;
     display: inline-block;
 }
@@ -841,6 +844,21 @@ header nav a:hover{
     width: 15%;
 }
 
+.footer hr{
+    margin: 15px auto;
+    width: 90%;
+    height: 5px;
+    background: #c7a17a;
+}
+
+.footer .rights{
+    text-align: center;
+}
+
+.footer .rights p{
+    color: #ffff;
+    font-size: 13px;
+}
 
 
 /**************************************** Footer Mobile ***************************/
@@ -852,6 +870,10 @@ header nav a:hover{
     
     .footer2 .footer-links p{
         width: 20%;
+    }
+    
+    .footer{
+        height: auto;
     }
 }
 
@@ -871,6 +893,10 @@ header nav a:hover{
     .footer-flex .footer2{
         width: 100%;
     }
+    
+    .footer{
+        height: auto;
+    }
 }
 
 @media(max-width: 576px){
@@ -888,5 +914,9 @@ header nav a:hover{
     
     .footer2 .footer-links p{
         width: 20%;
+    }
+    
+    .footer{
+        height: auto;
     }
 }
