@@ -318,7 +318,7 @@ header nav a:hover{
 
 .home-content{
     position: absolute;
-    left: -500px;
+    left: -200%;
     color: #fff;
     transition: left .5s ease-in-out;
 }
@@ -372,6 +372,24 @@ header nav a:hover{
   transition: left 0.5s ease;
 }
 
+/************************************* Home Mobile ********************************/
+
+@media(max-width: 991px){
+    .home-section{
+        width: 100%;
+    }
+    
+    
+}
+
+@media(max-width: 576px){
+    .home-section{
+        width: 100%;
+        background-size: cover;
+    }
+    
+    
+}
 /************************************* Section Two ********************************/
 
 .bg-service{

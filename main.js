@@ -36,6 +36,8 @@ function myNav() {
       closeNav();
     }
   });
+    
+////////////////////////////////// Hide bar on scroll ////////////////////////////////////////
 
   window.addEventListener("scroll", () => {
     const barsImg = document.querySelector(".bar");
@@ -54,17 +56,11 @@ function myNav() {
 
 myNav();
 
-window.onload = () => {
-  setTimeout(() => {
-    const homeContent = document.querySelector(".home-content");
-    homeContent.classList.remove("initial-position"); // Remove the 'initial-position' class
-    homeContent.style.left = "50px"; // Move it to the final position
-  }, 300); // 500 milliseconds (0.5 seconds) delay
-};
-
-////////////////////////////////// Menu Popup //////////////////////////////////////////////////////
-
-
+setTimeout(() => {
+  const homeContent = document.querySelector(".home-content");
+  homeContent.classList.remove("initial-position");
+  homeContent.style.left = "50px";
+}, 300);
 
 ////////////////////////////////// Logo Home Button////////////////////////////////////////////////
  // Get the image element by its ID
