@@ -574,7 +574,6 @@ header nav a:hover{
     text-transform: capitalize;
     letter-spacing: -1px;
     white-space: nowrap;
-    font-size: 18px;
 }
 
 .menu1 .line{
@@ -606,7 +605,7 @@ header nav a:hover{
     background: transparent;
 }
 
-/********************************* Section Four Mobile ************************/
+/********************************* Menu Mobile ************************/
 
 
 @media(max-width: 991px){
@@ -621,6 +620,15 @@ header nav a:hover{
 @media(max-width: 547px){
     .menu1 img{
         width: 90px;
+    }
+    .menu1 h4{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 390px){
+    .menu1 h4{
+        font-size: 17px;
     }
 }
 
