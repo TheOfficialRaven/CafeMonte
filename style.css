@@ -574,6 +574,7 @@ header nav a:hover{
     text-transform: capitalize;
     letter-spacing: -1px;
     white-space: nowrap;
+    font-size: 22px;
 }
 
 .menu1 .line{
