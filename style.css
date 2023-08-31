@@ -850,6 +850,7 @@ header nav a:hover{
     font-size: 14px;
     display: inline-block;
     transition: .4 ease-in-out;
+    cursor: default;
 }
 
 .footer2 .footer-links a{
@@ -863,6 +864,10 @@ header nav a:hover{
 }
 
 .footer2 .footer-links a:hover{
+    color: #c7a17a;
+}
+
+.footer1 .map:hover{
     color: #c7a17a;
 }
 
