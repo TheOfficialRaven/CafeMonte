@@ -17,7 +17,7 @@ function myNav() {
   function openNav() {
     nav.style.left = "0%";
     bar.src = "X.png";
-    homeContent.style.left = "50%";
+    homeContent.style.left = "30%";
   }
 
   function closeNav() {
@@ -59,7 +59,7 @@ myNav();
 setTimeout(() => {
   const homeContent = document.querySelector(".home-content");
   homeContent.classList.remove("initial-position");
-  homeContent.style.left = "50px";
+  homeContent.style.left = "38px";
 }, 300);
 
 ////////////////////////////////// Logo Home Button////////////////////////////////////////////////
