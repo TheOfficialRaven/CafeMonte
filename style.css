@@ -796,6 +796,7 @@ header nav a:hover{
     .bg-about .about2{
         width: 100%;
         margin-top: 50px;
+        margin-left: auto;
     }
 }
 
