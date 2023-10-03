@@ -102,7 +102,7 @@ header{
     left: 0;
     background: #000;
     z-index: 111;
-    padding: 15px 50px;
+    padding: 0px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
