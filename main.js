@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     homeContent.classList.remove("initial-position");
     homeContent.style.left = "38px";
-  }, 300);
+  }, 500);
 });
 
 
