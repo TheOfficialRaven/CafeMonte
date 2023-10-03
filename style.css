@@ -116,10 +116,10 @@ header nav{
 header nav a{
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 15px;
+    font-size: 20px;
     color: #fff;
     transition: .4s ease-in-out;
-    margin: 0px 10px;
+    margin: 0px 20px;
     position: relative;
 }
 
@@ -157,7 +157,7 @@ header nav a:hover{
 
 .logo img{
     position: relative;
-    width: 100px;
+    width: 120px;
     transition: transform 0.3s ease;
 }
 
@@ -423,7 +423,7 @@ header nav a:hover{
 
 .service-one img{
     width: 100%;
-    transition: .1s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 
@@ -548,7 +548,7 @@ header nav a:hover{
 }
 
 .menu-flex{
-    width: 90%;
+    width: 85%;
     margin: 0px auto;
     display: flex;
     align-items: center;
@@ -730,26 +730,31 @@ header nav a:hover{
     margin: 100px 0px;
     width: 100%;
     scroll-margin-top: 150px;
+    justify-content: center;
+    display: flex;
 }
 
 .bg-about .about-flex{
     display: flex;
+    max-width: 1400px;
 }
 
 .about-flex .about1{
     width: 50%;
     position: relative;
     border: 8px solid #c7a17a;
+    margin-right:15px;
 }
 
 .about-flex .about2{
     width: 49%;
     position: relative;
     text-align: center;
+    margin-left:15px;
 }
 
 .about-flex .about1 img{
-    width: 95%;
+    width: 94%;
     margin: 20px;
 }
 
